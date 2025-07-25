@@ -262,6 +262,11 @@ The theme is fully responsive with breakpoints at:
 
 This theme is licensed under the GPL v2 or later.
 
+## 🙏 Credits
+
+- The design for this theme is based on the "Tech Book Club" template from [Frontend Mentor](https://www.frontendmentor.io/).
+- All design rights belong to their respective owners at Frontend Mentor.
+
 ## 🏷️ Version History
 
 ### Version 1.0.0
