@@ -46,7 +46,7 @@ A modern, responsive WordPress block theme designed specifically for tech book c
 
 ### Method 2: Manual Installation
 1. Extract the theme files to your computer
-2. Upload the `alex-block-theme` folder to `/wp-content/themes/` via FTP
+2. Upload the `alexs-block-theme` folder to `/wp-content/themes/` via FTP
 3. Go to **Appearance > Themes** in your WordPress admin
 4. Activate the "Alex's Block Theme" theme
 
@@ -86,7 +86,7 @@ Add custom JavaScript via:
 ## 📁 File Structure
 
 ```
-alex-block-theme/
+alexs-block-theme/
 ├── style.css                 # Main stylesheet with theme info
 ├── theme.json               # Block theme configuration
 ├── functions.php            # Theme functions and setup

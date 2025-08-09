@@ -1,17 +1,72 @@
-<!-- wp:group {"style":{"spacing":{"padding":{"top":"2rem","bottom":"2rem"}}},"backgroundColor":"dark","textColor":"white","className":"footer"} -->
-<div class="wp-block-group footer has-white-color has-dark-background-color has-text-color has-background" style="padding-top:2rem;padding-bottom:2rem">
-	<!-- wp:group {"layout":{"type":"flex","justifyContent":"space-between","flexWrap":"wrap"}} -->
+<!-- wp:group {"style":{"spacing":{"padding":{"top":"3rem","bottom":"2rem","left":"1rem","right":"1rem"}}},"backgroundColor":"dark"} -->
+<div class="wp-block-group has-dark-background-color has-background" style="padding-top:3rem;padding-bottom:2rem;padding-left:1rem;padding-right:1rem">
+	<!-- wp:group {"layout":{"type":"constrained","contentSize":"1200px"}} -->
 	<div class="wp-block-group">
-		<!-- wp:paragraph {"style":{"typography":{"fontSize":"0.9rem"}}} -->
-		<p style="font-size:0.9rem">© 2024 - Alex's Block Theme</p>
-		<!-- /wp:paragraph -->
+		<!-- wp:columns {"align":"wide"} -->
+		<div class="wp-block-columns alignwide">
+			<!-- wp:column {"width":"40%"} -->
+			<div class="wp-block-column" style="flex-basis:40%">
+				<!-- wp:group {"layout":{"type":"flex","flexWrap":"nowrap"}} -->
+				<div class="wp-block-group">
+					<!-- wp:image {"width":"32px","height":"32px","scale":"cover","sizeSlug":"thumbnail","style":{"border":{"radius":"4px"}}} -->
+					<figure class="wp-block-image size-thumbnail is-resized has-custom-border"><img alt="Tech Book Club Logo" style="border-radius:4px;object-fit:cover;width:32px;height:32px" /></figure>
+					<!-- /wp:image -->
 
-		<!-- wp:social-links {"iconColor":"white","iconColorValue":"#ffffff","size":"has-normal-icon-size","style":{"spacing":{"blockGap":{"top":"1rem","left":"1rem"}}}} -->
-		<ul class="wp-block-social-links has-normal-icon-size has-icon-color" style="gap-top:1rem;gap-left:1rem">
-			<!-- wp:social-link {"url":"#","service":"twitter"} /-->
-			<!-- wp:social-link {"url":"#","service":"linkedin"} /-->
-		</ul>
-		<!-- /wp:social-links -->
+					<!-- wp:site-title {"style":{"typography":{"fontWeight":"700","fontSize":"1.25rem"}},"textColor":"white"} /-->
+				</div>
+				<!-- /wp:group -->
+
+				<!-- wp:paragraph {"style":{"typography":{"fontSize":"0.875rem","lineHeight":"1.6"},"spacing":{"margin":{"top":"1rem"}}},"textColor":"gray-300"} -->
+				<p class="has-gray-300-color has-text-color" style="margin-top:1rem;font-size:0.875rem;line-height:1.6">© 2024 - Tech Book Club</p>
+				<!-- /wp:paragraph -->
+			</div>
+			<!-- /wp:column -->
+
+			<!-- wp:column {"width":"60%"} -->
+			<div class="wp-block-column" style="flex-basis:60%">
+				<!-- wp:columns -->
+				<div class="wp-block-columns">
+					<!-- wp:column -->
+					<div class="wp-block-column">
+						<!-- wp:heading {"level":4,"style":{"typography":{"fontWeight":"600","fontSize":"1rem"}},"textColor":"white"} -->
+						<h4 class="wp-block-heading has-white-color has-text-color" style="font-size:1rem;font-weight:600">Community</h4>
+						<!-- /wp:heading -->
+
+						<!-- wp:navigation {"textColor":"gray-300","style":{"typography":{"fontSize":"0.875rem"}},"layout":{"type":"flex","orientation":"vertical"}} /-->
+					</div>
+					<!-- /wp:column -->
+
+					<!-- wp:column -->
+					<div class="wp-block-column">
+						<!-- wp:heading {"level":4,"style":{"typography":{"fontWeight":"600","fontSize":"1rem"}},"textColor":"white"} -->
+						<h4 class="wp-block-heading has-white-color has-text-color" style="font-size:1rem;font-weight:600">Resources</h4>
+						<!-- /wp:heading -->
+
+						<!-- wp:navigation {"textColor":"gray-300","style":{"typography":{"fontSize":"0.875rem"}},"layout":{"type":"flex","orientation":"vertical"}} /-->
+					</div>
+					<!-- /wp:column -->
+
+					<!-- wp:column -->
+					<div class="wp-block-column">
+						<!-- wp:heading {"level":4,"style":{"typography":{"fontWeight":"600","fontSize":"1rem"}},"textColor":"white"} -->
+						<h4 class="wp-block-heading has-white-color has-text-color" style="font-size:1rem;font-weight:600">Connect</h4>
+						<!-- /wp:heading -->
+
+						<!-- wp:social-links {"iconColor":"gray-300","iconColorValue":"#dee2e6","style":{"spacing":{"blockGap":{"top":"1rem","left":"1rem"}}}} -->
+						<ul class="wp-block-social-links has-icon-color">
+							<!-- wp:social-link {"url":"#","service":"twitter"} /-->
+							<!-- wp:social-link {"url":"#","service":"linkedin"} /-->
+							<!-- wp:social-link {"url":"#","service":"github"} /-->
+						</ul>
+						<!-- /wp:social-links -->
+					</div>
+					<!-- /wp:column -->
+				</div>
+				<!-- /wp:columns -->
+			</div>
+			<!-- /wp:column -->
+		</div>
+		<!-- /wp:columns -->
 	</div>
 	<!-- /wp:group -->
 </div>

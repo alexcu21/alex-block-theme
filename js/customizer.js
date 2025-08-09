@@ -152,9 +152,9 @@
     // Custom CSS live preview
     wp.customize('custom_css', function(value) {
         value.bind(function(newval) {
-            $('#tech-book-club-custom-css').remove();
+            $('#alexs-block-theme-custom-css').remove();
             if (newval) {
-                $('<style id="tech-book-club-custom-css">' + newval + '</style>').appendTo('head');
+                $('<style id="alexs-block-theme-custom-css">' + newval + '</style>').appendTo('head');
             }
         });
     });

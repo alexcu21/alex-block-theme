@@ -1,10 +1,22 @@
-<!-- wp:group {"style":{"spacing":{"padding":{"top":"1rem","bottom":"1rem"}}},"backgroundColor":"white","className":"header"} -->
-<div class="wp-block-group header has-white-background-color has-background" style="padding-top:1rem;padding-bottom:1rem">
-	<!-- wp:group {"layout":{"type":"flex","justifyContent":"space-between","flexWrap":"wrap"}} -->
+<!-- wp:group {"style":{"spacing":{"padding":{"top":"1rem","bottom":"1rem","left":"1rem","right":"1rem"}}},"backgroundColor":"white","className":"header"} -->
+<div class="wp-block-group header has-white-background-color has-background" style="padding-top:1rem;padding-bottom:1rem;padding-left:1rem;padding-right:1rem">
+	<!-- wp:group {"layout":{"type":"constrained","contentSize":"1200px"}} -->
 	<div class="wp-block-group">
-		<!-- wp:site-title {"style":{"typography":{"fontWeight":"700","fontSize":"1.5rem"}},"textColor":"dark"} /-->
+		<!-- wp:group {"layout":{"type":"flex","justifyContent":"space-between","flexWrap":"wrap"}} -->
+		<div class="wp-block-group">
+			<!-- wp:group {"layout":{"type":"flex","flexWrap":"nowrap"}} -->
+			<div class="wp-block-group">
+				<!-- wp:image {"width":"32px","height":"32px","scale":"cover","sizeSlug":"thumbnail","style":{"border":{"radius":"4px"}}} -->
+				<figure class="wp-block-image size-thumbnail is-resized has-custom-border"><img alt="Tech Book Club Logo" style="border-radius:4px;object-fit:cover;width:32px;height:32px" /></figure>
+				<!-- /wp:image -->
 
-		<!-- wp:navigation {"layout":{"type":"flex","setCascadingProperties":true,"justifyContent":"right"}} /-->
+				<!-- wp:site-title {"style":{"typography":{"fontWeight":"700","fontSize":"1.25rem"}},"textColor":"dark"} /-->
+			</div>
+			<!-- /wp:group -->
+
+			<!-- wp:navigation {"layout":{"type":"flex","setCascadingProperties":true,"justifyContent":"right"},"style":{"typography":{"fontWeight":"500"}}} /-->
+		</div>
+		<!-- /wp:group -->
 	</div>
 	<!-- /wp:group -->
 </div>

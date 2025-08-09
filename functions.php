@@ -63,52 +63,52 @@ function alex_block_theme_setup() {
 	// Add support for custom colors.
 	add_theme_support( 'editor-color-palette', array(
 		array(
-			'name'  => __( 'Primary', 'tech-book-club' ),
+			'name'  => __( 'Primary', 'alexs-block-theme' ),
 			'slug'  => 'primary',
 			'color' => '#e67e22',
 		),
 		array(
-			'name'  => __( 'Secondary', 'tech-book-club' ),
+			'name'  => __( 'Secondary', 'alexs-block-theme' ),
 			'slug'  => 'secondary',
 			'color' => '#16a085',
 		),
 		array(
-			'name'  => __( 'Dark', 'tech-book-club' ),
+			'name'  => __( 'Dark', 'alexs-block-theme' ),
 			'slug'  => 'dark',
 			'color' => '#2c3e50',
 		),
 		array(
-			'name'  => __( 'Light', 'tech-book-club' ),
+			'name'  => __( 'Light', 'alexs-block-theme' ),
 			'slug'  => 'light',
 			'color' => '#ecf0f1',
 		),
 		array(
-			'name'  => __( 'White', 'tech-book-club' ),
+			'name'  => __( 'White', 'alexs-block-theme' ),
 			'slug'  => 'white',
 			'color' => '#ffffff',
 		),
 		array(
-			'name'  => __( 'Gray 100', 'tech-book-club' ),
+			'name'  => __( 'Gray 100', 'alexs-block-theme' ),
 			'slug'  => 'gray-100',
 			'color' => '#f8f9fa',
 		),
 		array(
-			'name'  => __( 'Gray 200', 'tech-book-club' ),
+			'name'  => __( 'Gray 200', 'alexs-block-theme' ),
 			'slug'  => 'gray-200',
 			'color' => '#e9ecef',
 		),
 		array(
-			'name'  => __( 'Gray 300', 'tech-book-club' ),
+			'name'  => __( 'Gray 300', 'alexs-block-theme' ),
 			'slug'  => 'gray-300',
 			'color' => '#dee2e6',
 		),
 		array(
-			'name'  => __( 'Gray 600', 'tech-book-club' ),
+			'name'  => __( 'Gray 600', 'alexs-block-theme' ),
 			'slug'  => 'gray-600',
 			'color' => '#6c757d',
 		),
 		array(
-			'name'  => __( 'Gray 800', 'tech-book-club' ),
+			'name'  => __( 'Gray 800', 'alexs-block-theme' ),
 			'slug'  => 'gray-800',
 			'color' => '#343a40',
 		),
@@ -117,12 +117,12 @@ function alex_block_theme_setup() {
 	// Add support for custom gradients.
 	add_theme_support( 'editor-gradient-presets', array(
 		array(
-			'name'     => __( 'Primary to Secondary', 'tech-book-club' ),
+			'name'     => __( 'Primary to Secondary', 'alexs-block-theme' ),
 			'gradient' => 'linear-gradient(135deg, #e67e22 0%, #16a085 100%)',
 			'slug'     => 'primary-to-secondary',
 		),
 		array(
-			'name'     => __( 'Light to White', 'tech-book-club' ),
+			'name'     => __( 'Light to White', 'alexs-block-theme' ),
 			'gradient' => 'linear-gradient(135deg, #ecf0f1 0%, #ffffff 100%)',
 			'slug'     => 'light-to-white',
 		),
@@ -131,32 +131,32 @@ function alex_block_theme_setup() {
 	// Add support for custom font sizes.
 	add_theme_support( 'editor-font-sizes', array(
 		array(
-			'name' => __( 'Small', 'tech-book-club' ),
+			'name' => __( 'Small', 'alexs-block-theme' ),
 			'size' => 14,
 			'slug' => 'small',
 		),
 		array(
-			'name' => __( 'Medium', 'tech-book-club' ),
+			'name' => __( 'Medium', 'alexs-block-theme' ),
 			'size' => 16,
 			'slug' => 'medium',
 		),
 		array(
-			'name' => __( 'Large', 'tech-book-club' ),
+			'name' => __( 'Large', 'alexs-block-theme' ),
 			'size' => 18,
 			'slug' => 'large',
 		),
 		array(
-			'name' => __( 'Extra Large', 'tech-book-club' ),
+			'name' => __( 'Extra Large', 'alexs-block-theme' ),
 			'size' => 24,
 			'slug' => 'x-large',
 		),
 		array(
-			'name' => __( '2X Large', 'tech-book-club' ),
+			'name' => __( '2X Large', 'alexs-block-theme' ),
 			'size' => 32,
 			'slug' => 'xx-large',
 		),
 		array(
-			'name' => __( '3X Large', 'tech-book-club' ),
+			'name' => __( '3X Large', 'alexs-block-theme' ),
 			'size' => 48,
 			'slug' => 'xxx-large',
 		),
@@ -164,8 +164,8 @@ function alex_block_theme_setup() {
 
 	// Register navigation menus.
 	register_nav_menus( array(
-		'primary' => __( 'Primary Menu', 'tech-book-club' ),
-		'footer'  => __( 'Footer Menu', 'tech-book-club' ),
+		'primary' => __( 'Primary Menu', 'alexs-block-theme' ),
+		'footer'  => __( 'Footer Menu', 'alexs-block-theme' ),
 	) );
 
 	// Add image sizes.
@@ -182,16 +182,16 @@ add_action( 'after_setup_theme', 'alex_block_theme_setup' );
  */
 function alex_block_theme_scripts() {
 	// Enqueue theme stylesheet.
-	wp_enqueue_style( 'alex-block-theme-style', get_stylesheet_uri(), array(), wp_get_theme()->get( 'Version' ) );
+	wp_enqueue_style( 'alexs-block-theme-style', get_stylesheet_uri(), array(), wp_get_theme()->get( 'Version' ) );
 
 	// Enqueue editor styles.
 	add_editor_style( 'style.css' );
 
 	// Enqueue theme script.
-	wp_enqueue_script( 'alex-block-theme-script', get_template_directory_uri() . '/js/theme.js', array(), wp_get_theme()->get( 'Version' ), true );
+	wp_enqueue_script( 'alexs-block-theme-script', get_template_directory_uri() . '/js/theme.js', array(), wp_get_theme()->get( 'Version' ), true );
 
 	// Localize script for AJAX.
-	wp_localize_script( 'alex-block-theme-script', 'alexBlockThemeAjax', array(
+	wp_localize_script( 'alexs-block-theme-script', 'alexBlockThemeAjax', array(
 		'ajaxurl' => admin_url( 'admin-ajax.php' ),
 		'nonce'   => wp_create_nonce( 'alex_block_theme_nonce' ),
 	) );
@@ -207,7 +207,7 @@ function alex_block_theme_block_styles() {
 	// Register block styles.
 	register_block_style( 'core/button', array(
 		'name'         => 'outline',
-		'label'        => __( 'Outline', 'tech-book-club' ),
+		'label'        => __( 'Outline', 'alexs-block-theme' ),
 		'inline_style' => '
 			.is-style-outline .wp-block-button__link {
 				background-color: transparent;
@@ -223,7 +223,7 @@ function alex_block_theme_block_styles() {
 
 	register_block_style( 'core/group', array(
 		'name'         => 'hero-section',
-		'label'        => __( 'Hero Section', 'tech-book-club' ),
+		'label'        => __( 'Hero Section', 'alexs-block-theme' ),
 		'inline_style' => '
 			.is-style-hero-section {
 				padding: 4rem 0;
@@ -234,7 +234,7 @@ function alex_block_theme_block_styles() {
 
 	register_block_style( 'core/group', array(
 		'name'         => 'cta-section',
-		'label'        => __( 'CTA Section', 'tech-book-club' ),
+		'label'        => __( 'CTA Section', 'alexs-block-theme' ),
 		'inline_style' => '
 			.is-style-cta-section {
 				padding: 4rem 0;
@@ -254,8 +254,8 @@ add_action( 'init', 'alex_block_theme_block_styles' );
  */
 function alex_block_theme_block_patterns() {
 	// Register block pattern category.
-	register_block_pattern_category( 'alex-block-theme', array(
-		'label' => __( 'Alex\'s Block Theme', 'alex-block-theme' ),
+	register_block_pattern_category( 'alexs-block-theme', array(
+		'label' => __( 'Alex\'s Block Theme', 'alexs-block-theme' ),
 	) );
 }
 add_action( 'init', 'alex_block_theme_block_patterns' );
@@ -293,9 +293,9 @@ add_filter( 'excerpt_more', 'alex_block_theme_excerpt_more' );
  */
 function alex_block_theme_custom_image_sizes( $sizes ) {
 	return array_merge( $sizes, array(
-		'hero-image'         => __( 'Hero Image', 'alex-block-theme' ),
-		'feature-image'      => __( 'Feature Image', 'alex-block-theme' ),
-		'testimonial-avatar' => __( 'Testimonial Avatar', 'alex-block-theme' ),
+		'hero-image'         => __( 'Hero Image', 'alexs-block-theme' ),
+		'feature-image'      => __( 'Feature Image', 'alexs-block-theme' ),
+		'testimonial-avatar' => __( 'Testimonial Avatar', 'alexs-block-theme' ),
 	) );
 }
 add_filter( 'image_size_names_choose', 'alex_block_theme_custom_image_sizes' );
@@ -312,7 +312,7 @@ function alex_block_theme_body_classes( $classes ) {
 	$classes[] = 'block-theme';
 
 	// Add class for Alex's block theme.
-	$classes[] = 'alex-block-theme';
+	$classes[] = 'alexs-block-theme';
 
 	return $classes;
 }
@@ -340,32 +340,32 @@ add_action( 'after_setup_theme', 'alex_block_theme_woocommerce_support' );
 function alex_block_theme_customize_register( $wp_customize ) {
 	// Add section for theme options.
 	$wp_customize->add_section( 'alex_block_theme_options', array(
-		'title'    => __( 'Alex\'s Block Theme Options', 'alex-block-theme' ),
+		'title'    => __( 'Alex\'s Block Theme Options', 'alexs-block-theme' ),
 		'priority' => 30,
 	) );
 
 	// Add setting for hero subtitle.
 	$wp_customize->add_setting( 'hero_subtitle', array(
-		'default'           => __( 'Turn your reading time into learning time with fellow tech enthusiasts.', 'alex-block-theme' ),
+		'default'           => __( 'Turn your reading time into learning time with fellow tech enthusiasts.', 'alexs-block-theme' ),
 		'sanitize_callback' => 'sanitize_text_field',
 	) );
 
 	// Add control for hero subtitle.
 	$wp_customize->add_control( 'hero_subtitle', array(
-		'label'   => __( 'Hero Subtitle', 'alex-block-theme' ),
+		'label'   => __( 'Hero Subtitle', 'alexs-block-theme' ),
 		'section' => 'alex_block_theme_options',
 		'type'    => 'text',
 	) );
 
 	// Add setting for CTA text.
 	$wp_customize->add_setting( 'cta_text', array(
-		'default'           => __( 'Ready to debug your reading list?', 'alex-block-theme' ),
+		'default'           => __( 'Ready to debug your reading list?', 'alexs-block-theme' ),
 		'sanitize_callback' => 'sanitize_text_field',
 	) );
 
 	// Add control for CTA text.
 	$wp_customize->add_control( 'cta_text', array(
-		'label'   => __( 'CTA Text', 'alex-block-theme' ),
+		'label'   => __( 'CTA Text', 'alexs-block-theme' ),
 		'section' => 'alex_block_theme_options',
 		'type'    => 'text',
 	) );
@@ -401,7 +401,7 @@ add_action( 'after_setup_theme', 'alex_block_theme_gutenberg_support' );
  * @since 1.0.0
  */
 function alex_block_theme_customize_preview_js() {
-	wp_enqueue_script( 'alex-block-theme-customizer', get_template_directory_uri() . '/js/customizer.js', array( 'customize-preview' ), wp_get_theme()->get( 'Version' ), true );
+	wp_enqueue_script( 'alexs-block-theme-customizer', get_template_directory_uri() . '/js/customizer.js', array( 'customize-preview' ), wp_get_theme()->get( 'Version' ), true );
 }
 add_action( 'customize_preview_init', 'alex_block_theme_customize_preview_js' );
 
@@ -590,4 +590,22 @@ add_action( 'after_setup_theme', 'alex_block_theme_custom_font_sizes' );
 function alex_block_theme_align_wide() {
 	add_theme_support( 'align-wide' );
 }
-add_action( 'after_setup_theme', 'alex_block_theme_align_wide' ); 
+add_action( 'after_setup_theme', 'alex_block_theme_align_wide' );
+
+/**
+ * Register widget areas.
+ *
+ * @since 1.0.0
+ */
+function alex_block_theme_widgets_init() {
+	register_sidebar( array(
+		'name'          => __( 'Sidebar', 'alexs-block-theme' ),
+		'id'            => 'sidebar-1',
+		'description'   => __( 'Add widgets here to appear in your sidebar.', 'alexs-block-theme' ),
+		'before_widget' => '<section id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</section>',
+		'before_title'  => '<h3 class="widget-title">',
+		'after_title'   => '</h3>',
+	) );
+}
+add_action( 'widgets_init', 'alex_block_theme_widgets_init' ); 
